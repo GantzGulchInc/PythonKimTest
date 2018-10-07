@@ -20,7 +20,7 @@ class TestNameMapper2(Mapper):
 
     __type__ = TestName2
     id = field.String()
-    names = field.String()
+    name = field.String()
 
 
 class TestRoot2(AbstractBase2):
@@ -33,5 +33,4 @@ class TestRootMapper2(Mapper):
 
     __type__ = TestRoot2
     id = field.String()
-    names = field.Collection(field.Nested(TestNameMapper2))
-
+    names = field.Collection(field.Nested(TestNameMapper2, allow_create = True, allow_updates_in_place = True, allow_partial_updates = True))

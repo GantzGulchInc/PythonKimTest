@@ -13,7 +13,7 @@ def executeTest1():
         with open("test1.json", 'r') as f:
             jsonData = json.load(f)
 
-        mapper = test1.TestRootMapper1(data = jsonData)
+        mapper: test1.TestRootMapper1 = test1.TestRootMapper1(data = jsonData)
 
         root: test1.TestRoot1 = mapper.marshal()
 
@@ -33,7 +33,7 @@ def executeTest2():
         with open("test2.json", 'r') as f:
             jsonData = json.load(f)
 
-        mapper = test2.TestRootMapper2(data = jsonData)
+        mapper: test2.TestRootMapper2 = test2.TestRootMapper2(data = jsonData)
 
         root: test2.TestRoot2 = mapper.marshal()
 
