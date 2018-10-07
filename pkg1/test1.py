@@ -13,8 +13,8 @@ class AbstractBase1(object):
 class TestRoot1(AbstractBase1):
 
     def __init__(self):
-        id: str = ""
-        names: List[str] = []
+        self.id: str = ""
+        self.names: List[str] = []
 
 class TestRootMapper1(Mapper):
 

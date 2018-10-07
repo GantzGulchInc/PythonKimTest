@@ -13,8 +13,8 @@ class AbstractBase2(object):
 class TestName2(AbstractBase2):
 
     def __init__(self):
-        id: str = ""
-        name: str = ""
+        self.id: str = ""
+        self.name: str = ""
 
 class TestNameMapper2(Mapper):
 
@@ -26,8 +26,8 @@ class TestNameMapper2(Mapper):
 class TestRoot2(AbstractBase2):
 
     def __init__(self):
-        id: str = ""
-        names: List[TestName2] = []
+        self.id: str = ""
+        self.names: List[TestName2] = []
 
 class TestRootMapper2(Mapper):
 
